@@ -1,0 +1,199 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightgrey;
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  background-image: url("../katse.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.services {
+  background-image: url("../Afriski.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+p {
+  color: white;
+}
+
+p2 {
+  color: black;
+  display: block;
+}
+
+p3 {
+  color: green;
+  display: block;
+}
+
+[data-bs-theme="light"]
+ body:not(.home):not(.services) main p {
+  color: black;
+}
+
+.navbar {
+  background-color: skyblue;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+h1 .navbar-brand {
+  font-family: "Times New Roman", serif;
+}
+
+h2 .navbar-brand {
+  font-family: "Times New Roman", serif;
+}
+
+h3 .navbar-brand {
+  font-family: "Times New Roman", serif;
+}
+
+.site-footer {
+  background-color: skyblue;
+  color: white;
+}
+
+.footer-link {
+  color: blue;
+  text-decoration: underline;
+}
+
+.page-title {
+  background-color: skyblue;
+  background-image: url("../katse.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  padding: 50px 0;
+}
+
+.btn-brand {
+  background-color: green;
+  color: white;
+  border-radius: 30px;
+  padding: 10px 15px;
+  transition: all 0.3s;
+}
+
+.btn-brand:hover,
+.btn-brand.active {
+  background-color: yellow;
+}
+
+#themeBtn {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1030;
+}
+
+#topBtn[hidden] {
+  display: none;
+}
+
+.feature-card,
+.place-card {
+  border: none;
+  border-top: 4px solid green;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover,
+.place-card:hover {
+  transform: translateX(6px);
+}
+
+.gallery-img {
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.gallery-img:hover {
+  transform: translateX(6px);
+}
+
+.invalid-feedback:not(:empty) {
+  display: block;
+  color: red;
+  font-size: 15px;
+}
+
+[data-bs-theme="dark"] body {
+  background-color: #10151f;
+}
+
+[data-bs-theme="dark"] .home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../katse.jpg");
+}
+
+[data-bs-theme="dark"] .services {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../Afriski.jpg");
+}
+
+[data-bs-theme="dark"] main > p2 {
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.navbar nav a {
+  padding: 6px 8px;
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .slide-img {
+    height: 260px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+  .home,
+  .services,
+  .page-title {
+    background-attachment: scroll;
+  }
+
+  .page-title {
+    padding: 30px 0;
+  }
+  .navbar .container {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .navbar nav {
+    justify-content: center;
+  }
+
+  #topBtn {
+    bottom: 15px;
+    right: 15px;
+  }
+}
